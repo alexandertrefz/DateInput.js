@@ -88,6 +88,11 @@
 						return false
 					} else {
 						elem.val(fillNumber((""+(+elem.val())) + keyValue, size))
+						if (+elem.val() > range) {
+							elem.val(fillNumber(range, size))
+							moveRight()
+							return false
+						}
 						if ((""+(+elem.val())).length === size) {
 							moveRight()
 							return false
