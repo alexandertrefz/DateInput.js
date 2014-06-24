@@ -419,3 +419,52 @@ footer {
     color:#444;
   }
 }
+
+.inputs {
+  box-sizing: border-box;
+}
+.input {
+  background: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  font-family: "Open Sans";
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+  font-size: 28px;
+  padding: 10px 0;
+  transition: 0.2s border linear;
+  font-weight: 300;
+}
+input.input {
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+}
+.divider {
+  font-size: 22px;
+  display: inline-block;
+  height: 37px;
+  color: #ccc;
+  border-bottom: 2px solid #f0f0f0;
+}
+.divider::after {
+  content: "/";
+}
+.input.dayInput {
+  width: 50px;
+}
+.input.monthInput {
+  width: 60px;
+}
+.input.monthInput.narrow {
+  width: 50px;
+}
+.input.yearInput {
+  width: 80px;
+}
+.input:focus {
+  outline: none;
+  border-bottom-color: #A7D792;
+}
